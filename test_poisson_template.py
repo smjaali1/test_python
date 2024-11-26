@@ -9,9 +9,6 @@ def test_exact_solution():
     uh, ue = solve_poisson(n=4, degree=2)
     error_H1 = errornorm(uh, ue, "H1")
     assert error_H1 <1e-12
-
-
-    
     
 
 def test_convergence_P1():
